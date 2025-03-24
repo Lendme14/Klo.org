@@ -68,7 +68,7 @@
                 <div class="toggle-panel toggle-right">
                     <h1>Hello, Friend!</h1>
                     <p>Register with your personal details to use all site features</p>
-                    <button class="visible" id="register">Sign Up</button>
+                    <button class="hidden" id="register">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -76,20 +76,21 @@
 
     <!-- Toggle Script -->
     <script>
-        // Selecting elements
-        const container = document.getElementById("container");
-        const registerBtn = document.getElementById("register");
-        const loginBtn = document.getElementById("login");
+        // Copyright (c) 2025 Izuchukwu Nwabueze
+// All rights reserved.
 
-        // Toggle to Sign Up
-        registerBtn.addEventListener("click", () => {
-            container.classList.add("active");
-        });
+const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
 
-        // Toggle to Sign In
-        loginBtn.addEventListener("click", () => {
-            container.classList.remove("active");
-        });
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
+
     </script>
 </body>
 </html>
