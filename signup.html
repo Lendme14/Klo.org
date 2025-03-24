@@ -20,7 +20,7 @@
                     <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                
+
                 <label for="signup-name">Name</label>
                 <input type="text" id="signup-name" name="name" placeholder="Enter your name">
 
@@ -74,6 +74,22 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Toggle Script -->
+    <script>
+        // Selecting elements
+        const container = document.getElementById("container");
+        const registerBtn = document.getElementById("register");
+        const loginBtn = document.getElementById("login");
+
+        // Toggle to Sign Up
+        registerBtn.addEventListener("click", () => {
+            container.classList.add("active");
+        });
+
+        // Toggle to Sign In
+        loginBtn.addEventListener("click", () => {
+            container.classList.remove("active");
+        });
+    </script>
 </body>
 </html>
