@@ -3,90 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In/Up</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Login & Signup</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container" class="container">
-        <!-- Sign-up Form -->
-        <div class="form-container sign-up">
-            <form>
-                <h1>Create Account</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span>or use your email for registration</span>
 
-                <label for="signup-name">Name</label>
-                <input type="text" id="signup-name" name="name" placeholder="Enter your name">
+<div class="container" id="container">
+    <!-- Sign Up Form -->
+    <div class="form-container sign-up">
+        <form>
+            <h1>Create Account</h1>
+            <div class="social-icons">
+                <a href="#" class="icon">🔵</a>
+                <a href="#" class="icon">🔴</a>
+                <a href="#" class="icon">🟠</a>
+            </div>
+            <span>Use your email for registration</span>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>Sign Up</button>
+        </form>
+    </div>
 
-                <label for="signup-email">Email</label>
-                <input type="email" id="signup-email" name="email" placeholder="Enter your email">
+    <!-- Sign In Form -->
+    <div class="form-container sign-in">
+        <form>
+            <h1>Sign In</h1>
+            <div class="social-icons">
+                <a href="#" class="icon">🔵</a>
+                <a href="#" class="icon">🔴</a>
+                <a href="#" class="icon">🟠</a>
+            </div>
+            <span>Use your email to sign in</span>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>Sign In</button>
+        </form>
+    </div>
 
-                <label for="signup-password">Password</label>
-                <input type="password" id="signup-password" name="password" placeholder="Enter your password">
-
-                <button type="submit">Sign Up</button>
-            </form>
-        </div>
-
-        <!-- Sign-in Form -->
-        <div class="form-container sign-in">
-            <form>
-                <h1>Sign In</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <span>or use your email and password</span>
-
-                <label for="signin-email">Email</label>
-                <input type="email" id="signin-email" name="signin-email" placeholder="Enter your email">
-
-                <label for="signin-password">Password</label>
-                <input type="password" id="signin-password" name="signin-password" placeholder="Enter your password">
-
-                <a href="#">Forgot Your Password?</a>
-                <button type="submit">Sign In</button>
-            </form>
-        </div>
-
-        <!-- Toggle Container -->
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Welcome Back!</h1>
-                    <p>Enter your personal details to use all site features</p>
-                    <button class="hidden" id="login">Sign In</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Register with your personal details to use all site features</p>
-                    <button class="hidden" id="register">Sign Up</button>
-                </div>
+    <!-- Toggle Container -->
+    <div class="toggle-container">
+        <div class="toggle">
+            <div class="toggle-panel toggle-left">
+                <h1>Welcome Back!</h1>
+                <p>To keep connected, please login with your details</p>
+                <button class="hidden" id="signIn">Sign In</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Hello, Friend!</h1>
+                <p>Enter your details and start your journey with us</p>
+                <button class="hidden" id="signUp">Sign Up</button>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Toggle Script -->
-    <script>
-        const container = document.getElementById('container');
-        const registerBtn = document.getElementById('register');
-        const loginBtn = document.getElementById('login');
-
-        registerBtn.addEventListener('click', () => {
-            container.classList.add("active");
-        });
-
-        loginBtn.addEventListener('click', () => {
-            container.classList.remove("active");
-        });
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
