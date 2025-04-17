@@ -1,4 +1,4 @@
-// pages/index.js
+// pages/index.jss
 }
 import { useEffect, useState } from "react";
 import Head from "next/head";
