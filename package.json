@@ -1,7 +1,7 @@
 {
   "name": "klo-org",
   "version": "1.0.0",
-  "description": "Klo.org web application for e-commerce functionality.",
+  "description": "storezip is a  web application for e-commerce functionality.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -19,6 +19,6 @@
     "eslint-config-next": "13.0.0"
   },
   "keywords": [],
-  "author": "Your Name",
+  "author": "zuch.x",
   "license": "MIT"
 }
