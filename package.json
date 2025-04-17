@@ -1,0 +1,24 @@
+{
+  "name": "klo-org",
+  "version": "1.0.0",
+  "description": "Klo.org web application for e-commerce functionality.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "firebase": "^9.20.0",
+    "next": "^13.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.0.0"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "MIT"
+}
