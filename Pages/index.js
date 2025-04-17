@@ -1,4 +1,7 @@
 // pages/index.js
+export default function Home() {
+  return <h1>Welcome to StoreZip</h1>;
+}
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
