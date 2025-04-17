@@ -56,8 +56,8 @@ export default function Home() {
 
   // Ensure auth ready
   const requireAuth = () => {
-    if (!auth) {
-      alert("Authentication not ready. Please try again.");
+    if (!auth || !user) {
+      alert("Authentication not ready or user not logged in. Please try again.");
       return false;
     }
     return true;
